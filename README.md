@@ -38,8 +38,9 @@ A complete on-demand water delivery business system.
 > 🌐 **Live:** [water.devkoshti.com](https://water.devkoshti.com) · Private codebase — walkthrough available on request.
 
 ### 👗 JEE First Fashion
-A fashion e-commerce / brand website.
-> Private client project — demo on request.
+A fashion e-commerce storefront built with **Angular & TypeScript**: landing page, shop, category collections
+(Summer, Winter, Casual, Formal), brand story page and newsletter signup, with a service layer ready for a REST API.
+> Private repo — demo on request.
 
 ### More projects
 | Project | What it is |
@@ -59,7 +60,8 @@ A fashion e-commerce / brand website.
 <p>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
