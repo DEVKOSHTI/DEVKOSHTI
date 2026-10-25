@@ -37,10 +37,10 @@ A complete on-demand water delivery business system.
 
 > 🌐 **Live:** [water.devkoshti.com](https://water.devkoshti.com) · Private codebase — walkthrough available on request.
 
-### 👗 JEE First Fashion
+### 👗 [JEE First Fashion](https://fashion.devkoshti.com)
 A fashion e-commerce storefront built with **Angular & TypeScript**: landing page, shop, category collections
 (Summer, Winter, Casual, Formal), brand story page and newsletter signup, with a service layer ready for a REST API.
-> Private repo — demo on request.
+> 🌐 **Live:** [fashion.devkoshti.com](https://fashion.devkoshti.com) · Private codebase.
 
 ### More projects
 | Project | What it is |
