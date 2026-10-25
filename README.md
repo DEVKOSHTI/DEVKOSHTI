@@ -2,8 +2,8 @@
 <h3 align="center">Software Engineer</h3>
 
 <p align="center">
-  I build complete products end to end: backend APIs, admin dashboards, customer apps,
-  and data/automation tools that run in production.
+  I build complete products end to end — backend APIs, admin dashboards and customer apps —
+  that run in production.
 </p>
 
 <p align="center">
@@ -19,7 +19,6 @@
 ## 🧑‍💻 About Me
 
 - 🏗️ I ship **full product suites**, not just pages: backend + admin panel + customer app + driver/staff app.
-- ⚙️ I build **automation & data tools** like a published job-scraping actor on the Apify platform.
 - 🤖 I experiment with **AI-assisted developer tools**.
 - 🤝 Available for **full-time roles** and **freelance / client projects**.
 
@@ -38,12 +37,6 @@ A complete on-demand water delivery business system.
 | **Delivery App** | Delivery staff receive and complete orders |
 
 > 🌐 **Live:** [water.devkoshti.com](https://water.devkoshti.com) · Private codebase — walkthrough available on request.
-
-### 🔎 [LinkedIn Jobs Scraper (Apify Actor)](https://github.com/DEVKOSHTI/Apify-Linkedin-Jobs-Scraper)
-A cloud actor on the Apify platform that returns structured LinkedIn job listings
-(title, company, location, salary, date, link) filtered by keyword, country, location, company,
-job type and posting date. Exports to JSON / CSV / Excel and plugs into Zapier, Make and the Apify API.
-**Stack:** Node.js · Apify SDK · Axios · JSON Schema
 
 ### 🤖 AI Error Fixer
 A developer tool that uses AI to help explain and fix code errors.
@@ -76,7 +69,6 @@ A fashion e-commerce / brand website.
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/REST%20APIs-005571?style=flat-square" />
-  <img src="https://img.shields.io/badge/Apify-97D700?style=flat-square&logo=apify&logoColor=black" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
 </p>
 
@@ -87,7 +79,7 @@ A fashion e-commerce / brand website.
 - **Business apps** — customer app, staff app and admin panel on one backend
 - **REST APIs & backends** — auth, orders, payments, dashboards
 - **Websites & e-commerce** — responsive, fast, SEO-friendly
-- **Scrapers & automation** — data extraction, scheduled jobs, integrations (Zapier / Make)
+- **Maintenance & upgrades** — bug fixes, new features, faster apps
 
 ---
 
