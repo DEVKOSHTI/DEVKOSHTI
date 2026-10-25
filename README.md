@@ -9,6 +9,7 @@
 <p align="center">
   <a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-Contact%20me-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/YOUR_LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://devkoshti.com"><img src="https://img.shields.io/badge/Website-devkoshti.com-4f9cff?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
   <a href="https://github.com/DEVKOSHTI"><img src="https://img.shields.io/badge/GitHub-DEVKOSHTI-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   <img src="https://img.shields.io/badge/Open%20to-Work%20%26%20Freelance-2ea44f?style=for-the-badge" />
 </p>
@@ -99,4 +100,4 @@ A fashion e-commerce / brand website.
 
 ---
 
-<p align="center"><b>📫 Let's work together — reach me at YOUR_EMAIL</b></p>
+<p align="center"><b>🌐 <a href="https://devkoshti.com">devkoshti.com</a> · 📫 Let's work together — reach me at YOUR_EMAIL</b></p>
