@@ -1,8 +1,8 @@
 <h1 align="center">Hi, I'm Deva 👋</h1>
-<h3 align="center">Software Engineer · Full-Stack Web & Mobile · APIs & Automation</h3>
+<h3 align="center">Software Engineer</h3>
 
 <p align="center">
-  I build complete products end to end: backend APIs, admin dashboards, customer-facing mobile apps,
+  I build complete products end to end: backend APIs, admin dashboards, customer apps,
   and data/automation tools that run in production.
 </p>
 
