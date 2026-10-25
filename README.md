@@ -33,10 +33,10 @@ Software for water bottle delivery businesses. One server runs many businesses, 
 **Runs on:** a Realme 7 phone with Termux and a Cloudflare Tunnel, auto-updated from GitHub releases with rollback
 > Private code · walkthrough on request
 
-### 👗 JEE First Fashion · [fashion.devkoshti.com](https://fashion.devkoshti.com)
-An online fashion store with Summer, Winter, Casual and Formal collections, price sorting and a newsletter. Its REST API handles products, orders and order tracking, and always reads prices from the database.
+### 👗 Jeenal's Design Studio · [fashion.devkoshti.com](https://fashion.devkoshti.com)
+An online clothing store for a design studio. Shoppers browse collections, pick sizes, check out, get an order number and track their order, with a WhatsApp hand-off to the owner. The owner manages photos, prices, sizes, shop text and orders from an admin panel on her phone.
 
-**Built with:** Angular 19 · TypeScript · Node.js · Express 5 · SQLite · 15 end-to-end API tests
+**Built with:** Angular 19 · TypeScript · Node.js · Express 5 · SQLite · 20 end-to-end API tests
 **Runs on:** the same Realme 7 phone, with the same release pipeline
 > Private code · walkthrough on request
 
