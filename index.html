@@ -5,267 +5,133 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Dev Koshti · Software Engineer</title>
 <link rel="canonical" href="https://devkoshti.com/">
-<meta name="description" content="Dev Koshti is a software engineer who builds complete products (servers, admin panels and apps) and runs them in production, self-hosted on an Android phone.">
+<meta name="description" content="Dev Koshti is a software engineer who builds apps that businesses run on: servers, admin panels and mobile apps, live in production.">
 <meta property="og:title" content="Dev Koshti · Software Engineer">
-<meta property="og:description" content="Complete products, shipped and running. Two of them are served live from an Android phone.">
+<meta property="og:description" content="I build apps that businesses run on. See them live.">
 <meta property="og:url" content="https://devkoshti.com/">
-<meta name="theme-color" content="#EDEFE9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111417" media="(prefers-color-scheme: dark)">
+<meta property="og:image" content="https://devkoshti.com/assets/fashion.jpg">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,600..900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=IBM+Plex+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* Layout: a spec-sheet page. Mono labels sit in a narrow left rail, content runs in the wide right column;
-   the hero pairs the statement with a live status board, the one boxed object on the page. */
+/* Clean white page, generous space, real product screenshots as the centrepiece.
+   Yellow is the only accent, and the yellow contact block closes the page. */
 :root {
-  --paper: #EDEFE9;      /* grey with a slight green bias */
-  --panel: #F8F9F5;
+  --bg: #FFFFFF;
+  --soft: #F5F6F3;
   --ink: #12161B;
-  --muted: #535B63;
-  --rule: #C7CCC2;
-  --signal: #FFD21F;     /* label-maker yellow */
-  --on-signal: #12161B;
+  --muted: #5B6470;
+  --line: #E4E7E1;
+  --yellow: #FFD21F;
   --ok: #17864A;
   --down: #C63D2B;
-  --display: "Archivo", "Arial Narrow", Arial, sans-serif;
-  --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sans: "Plus Jakarta Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --step--1: 0.8125rem;
-  --step-0: 1rem;
-  --step-1: 1.1875rem;
-  --step-2: 1.5rem;
-  --step-3: clamp(1.75rem, 3.4vw, 2.5rem);
-  --step-4: clamp(2.3rem, 5.6vw, 4.3rem);
-  --gutter: max(16px, env(safe-area-inset-left, 0px));
-  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --display: "Archivo", "Arial Black", Arial, sans-serif;
   color-scheme: light;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #111417; --panel: #181C20; --ink: #E6E9E2; --muted: #9AA39C; --rule: #2C3238;
-    --signal: #FFD21F; --on-signal: #12161B; --ok: #3CCB7A; --down: #FF6E5A; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #111417; --panel: #181C20; --ink: #E6E9E2; --muted: #9AA39C; --rule: #2C3238;
-  --signal: #FFD21F; --on-signal: #12161B; --ok: #3CCB7A; --down: #FF6E5A; color-scheme: dark;
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 400 var(--step-0)/1.6 var(--body);
-  -webkit-font-smoothing: antialiased;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-body::before {
-  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
-  background: var(--paper); z-index: 20;
-}
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 1.05rem/1.65 var(--sans); -webkit-font-smoothing: antialiased; }
 a { color: inherit; }
-img { max-width: 100%; }
-:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px; }
-::selection { background: var(--signal); color: var(--on-signal); }
+img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+::selection { background: var(--yellow); color: var(--ink); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
 
-.wrap {
-  max-width: 1160px;
-  margin: 0 auto;
-  padding-left: var(--gutter);
-  padding-right: var(--gutter-r);
-}
-.mono { font-family: var(--mono); }
-.label {
-  font: 500 var(--step--1)/1.3 var(--mono);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.tape {
-  display: inline-block;
-  background: var(--signal);
-  color: var(--on-signal);
-  font: 500 0.75rem/1 var(--mono);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.35em 0.55em 0.3em;
-}
+/* Nav */
+.nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top, 0px); }
+.nav .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 64px; gap: 16px; }
+.name { font-weight: 800; font-size: 1.1rem; letter-spacing: -.01em; text-decoration: none; }
+.nav nav { display: flex; gap: 8px; align-items: center; }
+.nav nav a { text-decoration: none; font-weight: 500; font-size: .95rem; color: var(--muted); padding: 8px 12px; border-radius: 8px; }
+.nav nav a:hover { color: var(--ink); background: var(--soft); }
+.nav nav a.cta { color: var(--ink); background: var(--yellow); font-weight: 600; }
+@media (max-width: 520px) { .nav nav a.hide { display: none; } }
 
-/* Top bar */
-.top {
-  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
-  background: var(--paper);
-  border-bottom: 1px solid var(--rule);
-}
-.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 56px; }
-.mark { font: 800 1.05rem/1 var(--display); font-stretch: 125%; letter-spacing: -0.01em; text-decoration: none; }
-.mark span { color: var(--muted); font-weight: 600; }
-.top nav { display: flex; gap: 22px; }
-.top nav a { font: 500 var(--step--1)/1 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; text-decoration: none; color: var(--muted); }
-.top nav a:hover { color: var(--ink); }
-@media (max-width: 640px) { .top nav a:not(.keep) { display: none; } }
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 10px; font: 600 1rem/1 var(--sans); text-decoration: none; border: 2px solid var(--ink); cursor: pointer; transition: transform .15s, background .15s, color .15s; }
+.btn:hover { transform: translateY(-2px); }
+.btn.dark { background: var(--ink); color: #fff; }
+.btn.light { background: transparent; color: var(--ink); }
+.btn.light:hover { background: var(--soft); }
+.btn svg { width: 18px; height: 18px; flex: none; }
 
 /* Hero */
-.hero { padding-block: clamp(48px, 8vw, 96px) clamp(48px, 7vw, 88px); }
-.hero .wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
-@media (max-width: 900px) { .hero .wrap { grid-template-columns: minmax(0, 1fr); } }
-.hero h1 {
-  font: 800 var(--step-4)/0.98 var(--display);
-  font-stretch: 118%;
-  letter-spacing: -0.025em;
-  margin: 18px 0 24px;
-  text-wrap: balance;
-}
-.hero h1 mark {
-  background: var(--signal);
-  color: var(--on-signal);
-  padding: 0 0.08em;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.lede { font-size: var(--step-1); max-width: 36ch; color: var(--ink); margin: 0 0 32px; }
-.lede b { font-weight: 600; }
+.hero { padding-block: clamp(64px, 11vw, 128px) clamp(48px, 7vw, 80px); }
+.badge { display: inline-flex; align-items: center; gap: 10px; padding: 7px 14px; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); font-size: .9rem; font-weight: 500; }
+.pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 0 rgba(23,134,74,.5); animation: pulse 2.2s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 9px rgba(23,134,74,0); } 100% { box-shadow: 0 0 0 0 rgba(23,134,74,0); } }
+.hero h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.02; letter-spacing: -.035em; font-weight: 800; margin: 24px 0 22px; max-width: 14ch; text-wrap: balance; }
+.hero h1 span { background: linear-gradient(transparent 62%, var(--yellow) 62%); }
+.hero p { font-size: clamp(1.1rem, 2vw, 1.3rem); color: var(--muted); max-width: 40ch; margin: 0 0 34px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.btn {
-  display: inline-flex; align-items: center; gap: 10px;
-  font: 600 0.95rem/1 var(--body);
-  padding: 14px 20px;
-  border: 1.5px solid var(--ink);
-  background: transparent; color: var(--ink);
-  text-decoration: none; cursor: pointer;
-  border-radius: 2px;
-  transition: background .15s, color .15s;
-}
-.btn:hover { background: var(--ink); color: var(--paper); }
-.btn.solid { background: var(--ink); color: var(--paper); }
-.btn.solid:hover { background: transparent; color: var(--ink); }
-.btn svg { width: 16px; height: 16px; flex: none; }
 
-/* Status board */
-.board {
-  background: var(--panel);
-  border: 1.5px solid var(--ink);
-  border-radius: 3px;
-  box-shadow: 6px 6px 0 var(--ink);
-  min-width: 0;
-}
-.board header { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: 1.5px solid var(--ink); }
-.board header .label { color: var(--ink); }
-.board ul { list-style: none; margin: 0; padding: 0; }
-.board li { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; gap: 4px 12px; align-items: baseline; padding: 16px 18px; border-bottom: 1px solid var(--rule); }
-.board li:last-child { border-bottom: 0; }
-.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--rule); align-self: center; }
-.dot.ok { background: var(--ok); box-shadow: 0 0 0 0 var(--ok); animation: beat 2.4s ease-out infinite; }
-.dot.down { background: var(--down); }
-@keyframes beat { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 55%, transparent); } 70%, 100% { box-shadow: 0 0 0 7px transparent; } }
-.host { font: 500 0.95rem/1.3 var(--mono); overflow-wrap: anywhere; }
-.host a { text-decoration: none; }
-.host a:hover { text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; }
-.state { font: 500 var(--step--1)/1.3 var(--mono); text-align: right; white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
-.state.ok { color: var(--ok); }
-.state.down { color: var(--down); }
-.where { grid-column: 2 / 4; font-size: 0.875rem; color: var(--muted); line-height: 1.45; }
-@media (max-width: 480px) {
-  .board li { grid-template-columns: 14px minmax(0, 1fr); }
-  .state { grid-column: 2; text-align: left; }
-  .where { grid-column: 2; }
-}
-.board footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 18px; border-top: 1.5px solid var(--ink); }
-.board footer p { margin: 0; font-size: 0.8125rem; color: var(--muted); }
-.recheck { font: 500 var(--step--1)/1 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; background: none; border: 0; color: var(--ink); cursor: pointer; padding: 6px 0; text-decoration: underline; text-decoration-color: var(--signal); text-decoration-thickness: 3px; text-underline-offset: 4px; }
+/* Work */
+.section { padding-block: clamp(56px, 8vw, 96px); }
+.kicker { font: 500 .85rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+.section h2 { font-size: clamp(2rem, 4.5vw, 3rem); letter-spacing: -.03em; line-height: 1.05; margin: 0 0 40px; font-weight: 800; }
+.project { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+.project + .project { margin-top: clamp(56px, 8vw, 96px); }
+.project.flip .shot { order: 2; }
+@media (max-width: 860px) { .project { grid-template-columns: minmax(0, 1fr); } .project.flip .shot { order: 0; } }
+.shot { display: block; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: var(--soft); box-shadow: 0 30px 60px -30px rgba(18,22,27,.35); text-decoration: none; transition: transform .25s; }
+.shot:hover { transform: translateY(-4px); }
+.bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: #fff; }
+.bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.bar span { margin-left: 8px; font: 400 .8rem/1 var(--mono); color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.shot img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+.info h3 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); letter-spacing: -.025em; line-height: 1.1; margin: 0 0 14px; font-weight: 800; }
+.info p { color: var(--muted); margin: 0 0 20px; font-size: 1.08rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0 0 26px; }
+.tags li { font-size: .88rem; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: var(--soft); border: 1px solid var(--line); }
+.live { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
+.status { display: inline-flex; align-items: center; gap: 8px; font: 500 .9rem/1 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
+.status.ok { color: var(--ok); } .status.ok::before { background: var(--ok); }
+.status.down { color: var(--down); } .status.down::before { background: var(--down); }
 
-/* Sections */
-section.block { border-top: 1px solid var(--rule); padding-block: clamp(56px, 8vw, 104px); }
-.block .wrap { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px clamp(24px, 4vw, 56px); }
-@media (max-width: 760px) { .block .wrap { grid-template-columns: minmax(0, 1fr); } }
-.rail { padding-top: 10px; }
-.block h2 { font: 800 var(--step-3)/1.08 var(--display); font-stretch: 115%; letter-spacing: -0.02em; margin: 0 0 14px; text-wrap: balance; }
-.intro { color: var(--muted); max-width: 60ch; margin: 0 0 40px; font-size: var(--step-1); }
+/* What I do */
+.soft { background: var(--soft); }
+.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 820px) { .services { grid-template-columns: minmax(0, 1fr); } }
+.service { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
+.service .icon { width: 44px; height: 44px; border-radius: 10px; background: var(--yellow); display: grid; place-items: center; margin-bottom: 18px; }
+.service .icon svg { width: 22px; height: 22px; }
+.service h3 { font-size: 1.25rem; letter-spacing: -.015em; margin: 0 0 8px; font-weight: 700; }
+.service p { margin: 0; color: var(--muted); }
+.stack { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.stack .kicker { margin: 0 10px 0 0; }
+.stack span { font-size: .92rem; font-weight: 500; padding: 6px 12px; border-radius: 8px; background: #fff; border: 1px solid var(--line); }
 
-/* Projects */
-.project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: 28px clamp(28px, 4vw, 56px); padding-block: 36px; border-top: 1.5px solid var(--ink); }
-.project + .project { margin-top: 24px; }
-@media (max-width: 960px) { .project { grid-template-columns: minmax(0, 1fr); } }
-.project h3 { font: 800 var(--step-2)/1.15 var(--display); font-stretch: 112%; margin: 12px 0 12px; letter-spacing: -0.01em; }
-.project p { margin: 0 0 14px; max-width: 62ch; }
-.project .who { list-style: none; padding: 0; margin: 18px 0 22px; display: grid; gap: 10px; }
-.project .who li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 12px; font-size: 0.95rem; }
-@media (max-width: 480px) { .project .who li { grid-template-columns: minmax(0, 1fr); gap: 0; } }
-.project .who b { font-weight: 600; }
-.links { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; }
-.links a { font-weight: 600; text-decoration-color: var(--signal); text-decoration-thickness: 3px; text-underline-offset: 4px; }
-.links span { font-size: 0.875rem; color: var(--muted); }
-.spec { margin: 0; border-top: 1px solid var(--rule); align-self: start; }
-.spec div { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--rule); }
-.spec dt { font: 500 var(--step--1)/1.5 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); }
-.spec dd { margin: 0; font-size: 0.95rem; }
-.also { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: baseline; }
-.also a { font-family: var(--mono); font-size: 0.95rem; text-decoration-color: var(--rule); text-underline-offset: 4px; }
-.also a:hover { text-decoration-color: var(--signal); }
-
-/* Shipping pipeline */
-.steps { list-style: none; counter-reset: step; margin: 0 0 36px; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1.5px solid var(--ink); }
-@media (max-width: 860px) { .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .steps { grid-template-columns: minmax(0, 1fr); } }
-.steps li { counter-increment: step; padding: 18px 20px 22px 0; border-bottom: 1px solid var(--rule); }
-.steps li::before { content: counter(step); display: inline-block; font: 500 0.75rem/1 var(--mono); background: var(--signal); color: var(--on-signal); padding: 4px 7px; margin-bottom: 12px; }
-.steps h3 { font: 600 1.02rem/1.35 var(--body); margin: 0 0 6px; }
-.steps p { margin: 0; color: var(--muted); font-size: 0.93rem; }
-.log { background: var(--ink); color: var(--paper); border-radius: 3px; padding: 18px 20px; overflow-x: auto; margin: 0; font: 400 0.84rem/1.75 var(--mono); }
-.log .t { opacity: 0.6; }
-.log .warn { color: var(--signal); }
-.log-cap { font-size: 0.875rem; color: var(--muted); margin: 10px 0 0; }
-
-/* Stack */
-.stack { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0 32px; border-top: 1.5px solid var(--ink); }
-.stack div { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); }
-.stack dt { margin-bottom: 6px; }
-.stack dd { margin: 0; font-size: 1rem; line-height: 1.7; }
-
-/* Hire */
-.hire { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 40px; border-top: 1.5px solid var(--ink); }
-@media (max-width: 700px) { .hire { grid-template-columns: minmax(0, 1fr); } }
-.hire li { padding: 20px 0; border-bottom: 1px solid var(--rule); }
-.hire h3 { font: 600 1.1rem/1.3 var(--body); margin: 0 0 6px; }
-.hire p { margin: 0; color: var(--muted); }
-
-/* Contact */
-.contact { background: var(--signal); color: var(--on-signal); padding-block: clamp(56px, 9vw, 112px); }
-.contact .label { color: var(--on-signal); opacity: 0.75; }
-.contact h2 { font: 800 var(--step-4)/1 var(--display); font-stretch: 120%; letter-spacing: -0.025em; margin: 14px 0 28px; text-wrap: balance; }
-.mail { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-bottom: 36px; }
-.mail a { font: 500 clamp(1.05rem, 3.2vw, 1.6rem)/1.2 var(--mono); color: var(--on-signal); overflow-wrap: anywhere; text-underline-offset: 6px; }
-.copy { font: 600 0.85rem/1 var(--body); padding: 10px 14px; background: var(--on-signal); color: var(--signal); border: 0; border-radius: 2px; cursor: pointer; }
-.copy:focus-visible { outline-color: var(--on-signal); }
-.socials { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 12px; }
-.socials a { display: inline-flex; align-items: center; gap: 10px; padding: 13px 18px; border: 1.5px solid var(--on-signal); border-radius: 2px; color: var(--on-signal); text-decoration: none; font-weight: 600; }
-.socials a:hover { background: var(--on-signal); color: var(--signal); }
-.socials a:focus-visible { outline-color: var(--on-signal); }
+/* Contact: the yellow block */
+.contact { background: var(--yellow); padding-block: clamp(64px, 10vw, 112px); }
+.contact .kicker { color: var(--ink); opacity: .75; }
+.contact h2 { font: 800 clamp(2.4rem, 7vw, 4.6rem)/1 var(--display); font-stretch: 120%; letter-spacing: -.025em; margin: 14px 0 30px; text-wrap: balance; }
+.mail { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-bottom: 36px; }
+.mail a { font: 500 clamp(1.05rem, 3.2vw, 1.6rem)/1.2 var(--mono); overflow-wrap: anywhere; text-underline-offset: 6px; }
+.copy { font: 600 .9rem/1 var(--sans); padding: 11px 16px; background: var(--ink); color: var(--yellow); border: 0; border-radius: 4px; cursor: pointer; }
+.socials { display: flex; flex-wrap: wrap; gap: 12px; }
+.socials a { display: inline-flex; align-items: center; gap: 10px; padding: 14px 20px; border: 2px solid var(--ink); border-radius: 4px; text-decoration: none; font-weight: 600; }
+.socials a:hover { background: var(--ink); color: var(--yellow); }
 .socials svg { width: 18px; height: 18px; flex: none; }
 
-footer.site { padding-block: 28px; }
-footer.site .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
-footer.site p { margin: 0; font: 400 var(--step--1)/1.5 var(--mono); color: var(--muted); }
+footer { padding-block: 28px 36px; color: var(--muted); font-size: .9rem; }
+footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .dot.ok { animation: none; }
-}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .pulse { animation: none; } .btn, .shot { transition: none; } }
 </style>
 </head>
 <body>
 
-<header class="top">
+<header class="nav">
   <div class="wrap">
-    <a class="mark" href="#">devkoshti<span>.com</span></a>
-    <nav aria-label="Sections">
-      <a href="#work">Work</a>
-      <a href="#shipping">Shipping</a>
-      <a href="#stack">Stack</a>
-      <a class="keep" href="#contact">Contact</a>
+    <a class="name" href="#">Dev Koshti</a>
+    <nav aria-label="Main">
+      <a class="hide" href="#work">Work</a>
+      <a class="hide" href="#services">Services</a>
+      <a class="cta" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -273,257 +139,140 @@ footer.site p { margin: 0; font: 400 var(--step--1)/1.5 var(--mono); color: var(
 <main>
   <section class="hero">
     <div class="wrap">
-      <div>
-        <span class="tape">Software Engineer · open to roles &amp; freelance</span>
-        <h1>Hi, I'm Dev Koshti. I build complete products and <mark>keep them running.</mark></h1>
-        <p class="lede">Servers, admin panels and mobile apps, built end to end and running live. Two of them are served right now from <b>an Android phone</b> I set up as a production server.</p>
-        <div class="actions">
-          <a class="btn solid" href="#work">See the work
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
-          <a class="btn" href="#contact">Contact me</a>
+      <span class="badge"><span class="pulse" aria-hidden="true"></span>Software Engineer · open to work &amp; freelance</span>
+      <h1>I build apps that <span>businesses run on.</span></h1>
+      <p>Servers, admin panels and mobile apps, built end to end and live today. Tap a project below to try it.</p>
+      <div class="actions">
+        <a class="btn dark" href="#work">See my work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <a class="btn light" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="wrap">
+      <p class="kicker">Work</p>
+      <h2>Live projects</h2>
+
+      <article class="project">
+        <a class="shot" href="https://water.devkoshti.com" target="_blank" rel="noopener" aria-label="Open the Water Delivery Platform">
+          <div class="bar"><i></i><i></i><i></i><span>water.devkoshti.com</span></div>
+          <img src="assets/water.jpg" alt="Water Delivery Platform admin panel" loading="lazy" width="1600" height="1000">
+        </a>
+        <div class="info">
+          <h3>Water Delivery Platform</h3>
+          <p>Runs water bottle delivery businesses: customers, deliveries, bills and payments. Staff tap NFC cards at the door; customers track bills in their own app.</p>
+          <ul class="tags"><li>Spring Boot</li><li>Angular</li><li>Flutter</li><li>Java 21</li></ul>
+          <div class="live">
+            <a class="btn dark" href="https://water.devkoshti.com" target="_blank" rel="noopener">Open live</a>
+            <span class="status" data-probe="water.devkoshti.com" data-paths="/favicon.ico">checking…</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project flip">
+        <a class="shot" href="https://fashion.devkoshti.com" target="_blank" rel="noopener" aria-label="Open Jeenal's Design Studio">
+          <div class="bar"><i></i><i></i><i></i><span>fashion.devkoshti.com</span></div>
+          <img src="assets/fashion.jpg" alt="Jeenal's Design Studio online store" loading="lazy" width="1600" height="1000">
+        </a>
+        <div class="info">
+          <h3>Jeenal's Design Studio</h3>
+          <p>An online store for a bespoke clothing studio. Shoppers pick sizes, order and track; the owner manages products and orders from her phone.</p>
+          <ul class="tags"><li>Angular 19</li><li>Node.js</li><li>SQLite</li><li>Owner panel</li></ul>
+          <div class="live">
+            <a class="btn dark" href="https://fashion.devkoshti.com" target="_blank" rel="noopener">Open live</a>
+            <span class="status" data-probe="fashion.devkoshti.com" data-paths="/favicon.ico,/assets/images/product1.jpg">checking…</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section soft" id="services">
+    <div class="wrap">
+      <p class="kicker">Services</p>
+      <h2>What I can build for you</h2>
+      <div class="services">
+        <div class="service">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+          <h3>Business apps</h3>
+          <p>Admin panel, staff app and customer app on one server.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></div>
+          <h3>Online stores</h3>
+          <p>A shop your customers enjoy, run from your phone.</p>
+        </div>
+        <div class="service">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+          <h3>APIs &amp; backends</h3>
+          <p>Logins, orders, payments and reports, with tests.</p>
         </div>
       </div>
-
-      <aside class="board" aria-labelledby="board-title">
-        <header>
-          <span class="label" id="board-title">Live systems</span>
-          <span class="tape">Self-hosted</span>
-        </header>
-        <ul>
-          <li>
-            <span class="dot ok" aria-hidden="true"></span>
-            <span class="host">devkoshti.com</span>
-            <span class="state ok">online</span>
-            <span class="where">This portfolio · GitHub Pages</span>
-          </li>
-          <li data-probe="water.devkoshti.com" data-paths="/favicon.ico">
-            <span class="dot" aria-hidden="true"></span>
-            <span class="host"><a href="https://water.devkoshti.com" target="_blank" rel="noopener">water.devkoshti.com</a></span>
-            <span class="state" aria-live="polite">checking…</span>
-            <span class="where">Water delivery platform · Realme 7 phone, Termux, Cloudflare Tunnel</span>
-          </li>
-          <li data-probe="fashion.devkoshti.com" data-paths="/favicon.ico,/assets/images/product1.jpg">
-            <span class="dot" aria-hidden="true"></span>
-            <span class="host"><a href="https://fashion.devkoshti.com" target="_blank" rel="noopener">fashion.devkoshti.com</a></span>
-            <span class="state" aria-live="polite">checking…</span>
-            <span class="where">Jeenal's Design Studio store · Realme 7 phone, Termux, Cloudflare Tunnel</span>
-          </li>
-        </ul>
-        <footer>
-          <p id="checked">Checked from your browser on page load.</p>
-          <button class="recheck" type="button" id="recheck">Check again</button>
-        </footer>
-      </aside>
-    </div>
-  </section>
-
-  <section class="block" id="work">
-    <div class="wrap">
-      <div class="rail"><span class="label">Work</span></div>
-      <div>
-        <h2>Products running today</h2>
-        <p class="intro">Each one is a whole system: the server, the screens people use, and the setup that keeps it online and up to date.</p>
-
-        <article class="project">
-          <div>
-            <span class="tape">Live · multi-business</span>
-            <h3>Water Delivery Platform</h3>
-            <p>Software for water bottle delivery businesses. One server runs many businesses, and each business sees only its own customers, staff, deliveries, bills and payments.</p>
-            <ul class="who">
-              <li><b>Platform owner</b><span>Creates businesses, switches them off, sees everything, takes database backups.</span></li>
-              <li><b>Business owner</b><span>Manages staff, customers, cards, payments, bills and pending dues in the admin panel.</span></li>
-              <li><b>Delivery staff</b><span>Tap a customer's NFC card or scan its QR code at the door. Can add new customers on the spot.</span></li>
-              <li><b>Customers</b><span>See bottles, bills and payments. Log in with mobile number and PIN or fingerprint; a forgotten PIN is reset by SMS.</span></li>
-            </ul>
-            <div class="links">
-              <a href="https://water.devkoshti.com" target="_blank" rel="noopener">Open the admin panel</a>
-              <span>Private code · walkthrough on request</span>
-            </div>
-          </div>
-          <dl class="spec">
-            <div><dt>Server</dt><dd>Spring Boot 3.5, Java 21, Spring Security with JWT, JPA</dd></div>
-            <div><dt>Database</dt><dd>H2 or PostgreSQL, nightly backup at 02:30</dd></div>
-            <div><dt>Admin</dt><dd>Angular, served by the same server</dd></div>
-            <div><dt>Apps</dt><dd>Two Flutter apps: delivery staff and customers</dd></div>
-            <div><dt>Hosting</dt><dd>Realme 7 phone, Termux, Cloudflare Tunnel</dd></div>
-            <div><dt>Deploys</dt><dd>GitHub Actions release, phone auto-updates with rollback</dd></div>
-          </dl>
-        </article>
-
-        <article class="project">
-          <div>
-            <span class="tape">Live · client e-commerce</span>
-            <h3>Jeenal's Design Studio</h3>
-            <p>An online clothing store for a design studio. Shoppers browse collections, pick sizes, check out with their phone number and address, get an order number and track their order. A WhatsApp hand-off connects them straight to the owner.</p>
-            <p>The owner runs the shop from her phone: she uploads product photos, sets prices, MRP and sizes, edits the shop's text and moves orders from new to delivered. Prices are always read from the database, so a shopper can't change what they pay.</p>
-            <div class="links">
-              <a href="https://fashion.devkoshti.com" target="_blank" rel="noopener">Visit the store</a>
-              <span>Private code · walkthrough on request</span>
-            </div>
-          </div>
-          <dl class="spec">
-            <div><dt>Frontend</dt><dd>Angular 19 with signals, TypeScript</dd></div>
-            <div><dt>API</dt><dd>Node.js, Express 5, SQLite, photo uploads</dd></div>
-            <div><dt>Owner</dt><dd>Admin panel with orders, products, categories, settings</dd></div>
-            <div><dt>Tested</dt><dd>20 end-to-end API tests</dd></div>
-            <div><dt>Hosting</dt><dd>Realme 7 phone, Termux, Cloudflare Tunnel</dd></div>
-            <div><dt>Deploys</dt><dd>Same release pipeline as the water platform</dd></div>
-          </dl>
-        </article>
-
-        <div class="also">
-          <span class="label">Also on GitHub</span>
-          <a href="https://github.com/DEVKOSHTI/ChatApp" target="_blank" rel="noopener">ChatApp</a>
-          <a href="https://github.com/DEVKOSHTI/travel" target="_blank" rel="noopener">travel</a>
-          <a href="https://github.com/DEVKOSHTI/Leetcode" target="_blank" rel="noopener">Leetcode</a>
-          <a href="https://github.com/DEVKOSHTI" target="_blank" rel="noopener">All repositories</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="shipping">
-    <div class="wrap">
-      <div class="rail"><span class="label">Shipping</span></div>
-      <div>
-        <h2>How a change reaches the phone</h2>
-        <p class="intro">I push code; the phone updates itself. Nobody has to touch the server, and a bad release can't take the store down.</p>
-        <ol class="steps">
-          <li><h3>Push to main</h3><p>Every change starts as a commit on GitHub.</p></li>
-          <li><h3>Test and build</h3><p>GitHub Actions runs the tests and builds the server and website.</p></li>
-          <li><h3>Publish a release</h3><p>The build goes up as a release with a SHA-256 checksum.</p></li>
-          <li><h3>Phone checks in</h3><p>Every 5 minutes the phone looks for a newer release and verifies the download.</p></li>
-          <li><h3>Swap with a backup</h3><p>It saves the current version and data, installs the new one and restarts.</p></li>
-          <li><h3>Roll back if needed</h3><p>If the health check fails, it restores the saved version and skips that release.</p></li>
-        </ol>
-        <pre class="log" aria-label="Example update log"><span class="t">12:58:55</span> Downloading server-2
-<span class="t">12:58:55</span> Installing server-2
-<span class="t">12:58:59</span> Update done, store is UP
-<span class="t">12:59:38</span> Downloading server-3
-<span class="t">12:59:38</span> Installing server-3
-<span class="t">13:01:39</span> <span class="warn">Store did not come up; going back to the previous version</span>
-<span class="t">13:01:44</span> Previous version is UP again</pre>
-        <p class="log-cap">What the updater writes to its log, from a test where release server-3 was deliberately broken.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="stack">
-    <div class="wrap">
-      <div class="rail"><span class="label">Stack</span></div>
-      <div>
-        <h2>Tools I build with</h2>
-        <p class="intro">What the projects above are made of.</p>
-        <dl class="stack">
-          <div><dt class="label">Languages</dt><dd>Java, TypeScript, JavaScript, Dart, SQL</dd></div>
-          <div><dt class="label">Backend</dt><dd>Spring Boot, Spring Security, JPA, Node.js, Express, REST APIs</dd></div>
-          <div><dt class="label">Frontend &amp; apps</dt><dd>Angular, Flutter</dd></div>
-          <div><dt class="label">Data</dt><dd>PostgreSQL, H2, SQLite</dd></div>
-          <div><dt class="label">Delivery</dt><dd>GitHub Actions, Docker, Linux shell, Termux, Cloudflare Tunnel</dd></div>
-        </dl>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" id="hire">
-    <div class="wrap">
-      <div class="rail"><span class="label">For clients</span></div>
-      <div>
-        <h2>What I can build for your business</h2>
-        <p class="intro">From the first screen to the server it runs on.</p>
-        <ul class="hire">
-          <li><h3>Business platforms</h3><p>A server, an admin panel and apps for your staff and customers, all working together.</p></li>
-          <li><h3>APIs and backends</h3><p>Logins, roles, orders, payments and reports, with tests.</p></li>
-          <li><h3>Websites and online stores</h3><p>Fast, mobile-friendly sites with a backend you can manage.</p></li>
-          <li><h3>Low-cost hosting</h3><p>Run your software on hardware you own, with automatic updates and backups.</p></li>
-        </ul>
+      <div class="stack">
+        <span class="kicker">Stack</span>
+        <span>Java</span><span>Spring Boot</span><span>TypeScript</span><span>Angular</span><span>Flutter</span><span>Node.js</span><span>PostgreSQL</span><span>GitHub Actions</span>
       </div>
     </div>
   </section>
 
   <section class="contact" id="contact">
     <div class="wrap">
-      <span class="label">Contact</span>
+      <p class="kicker">Contact</p>
       <h2>Let's build something.</h2>
       <div class="mail">
         <a href="mailto:devkoshti0119@gmail.com" id="email">devkoshti0119@gmail.com</a>
         <button class="copy" type="button" id="copy">Copy email</button>
       </div>
-      <ul class="socials">
-        <li><a href="https://www.linkedin.com/in/devkoshti" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a></li>
-        <li><a href="https://github.com/DEVKOSHTI" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a></li>
-        <li><a href="https://www.instagram.com/ha.dev.ha" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a></li>
-      </ul>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/devkoshti" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>LinkedIn</a>
+        <a href="https://github.com/DEVKOSHTI" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+        <a href="https://www.instagram.com/ha.dev.ha" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="site">
+<footer>
   <div class="wrap">
-    <p>© <span id="year">2026</span> Dev Koshti · devkoshti.com</p>
-    <p>Hand-written HTML and CSS, hosted on GitHub Pages</p>
+    <span>© <span id="year">2026</span> Dev Koshti</span>
+    <span>devkoshti.com</span>
   </div>
 </footer>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Loads a small image from the site; Cloudflare answers with an error page when the phone is offline.
-function probe(url, timeoutMs) {
+// Loads a small image from each live site; Cloudflare answers with an error page when it is down.
+function probe(url) {
   return new Promise(function (resolve) {
-    var img = new Image();
-    var start = performance.now();
-    var timer = setTimeout(function () { img.src = ''; resolve(null); }, timeoutMs);
+    var img = new Image(), start = performance.now();
+    var timer = setTimeout(function () { img.src = ''; resolve(null); }, 8000);
     img.onload = function () { clearTimeout(timer); resolve(Math.round(performance.now() - start)); };
     img.onerror = function () { clearTimeout(timer); resolve(null); };
-    img.src = url + (url.indexOf('?') < 0 ? '?' : '&') + 't=' + Date.now();
+    img.src = url + '?t=' + Date.now();
   });
 }
-
-async function checkRow(row) {
-  var dot = row.querySelector('.dot');
-  var state = row.querySelector('.state');
-  dot.className = 'dot';
-  state.className = 'state';
-  state.textContent = 'checking…';
-  var paths = row.dataset.paths.split(',');
-  var ms = null;
-  for (var i = 0; i < paths.length && ms === null; i++) {
-    ms = await probe('https://' + row.dataset.probe + paths[i], 8000);
-  }
-  dot.classList.add(ms === null ? 'down' : 'ok');
-  state.classList.add(ms === null ? 'down' : 'ok');
-  state.textContent = ms === null ? 'offline' : 'online · ' + ms + ' ms';
-}
-
-function checkAll() {
-  var rows = document.querySelectorAll('[data-probe]');
-  Promise.all(Array.prototype.map.call(rows, checkRow)).then(function () {
-    var t = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('checked').textContent = 'Checked from your browser at ' + t + '.';
-  });
-}
-checkAll();
-document.getElementById('recheck').addEventListener('click', checkAll);
+document.querySelectorAll('[data-probe]').forEach(async function (el) {
+  var paths = el.dataset.paths.split(','), ms = null;
+  for (var i = 0; i < paths.length && ms === null; i++) ms = await probe('https://' + el.dataset.probe + paths[i]);
+  el.className = 'status ' + (ms === null ? 'down' : 'ok');
+  el.textContent = ms === null ? 'offline right now' : 'online now · ' + ms + ' ms';
+});
 
 document.getElementById('copy').addEventListener('click', function () {
-  var btn = this;
-  var email = document.getElementById('email').textContent;
+  var btn = this, email = document.getElementById('email').textContent;
   function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy email'; }, 2000); }
   function selectText() {
-    var range = document.createRange();
-    range.selectNodeContents(document.getElementById('email'));
-    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
-    done('Selected, press copy');
+    var range = document.createRange(); range.selectNodeContents(document.getElementById('email'));
+    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range); done('Selected, press copy');
   }
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(email).then(function () { done('Copied'); }, selectText);
-  } else {
-    selectText();
-  }
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(email).then(function () { done('Copied'); }, selectText);
+  else selectText();
 });
 </script>
 </body>
