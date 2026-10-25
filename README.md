@@ -19,7 +19,6 @@
 ## 🧑‍💻 About Me
 
 - 🏗️ I ship **full product suites**, not just pages: backend + admin panel + customer app + driver/staff app.
-- 🤖 I experiment with **AI-assisted developer tools**.
 - 🤝 Available for **full-time roles** and **freelance / client projects**.
 
 ---
@@ -37,10 +36,6 @@ A complete on-demand water delivery business system.
 | **Delivery App** | Delivery staff receive and complete orders |
 
 > 🌐 **Live:** [water.devkoshti.com](https://water.devkoshti.com) · Private codebase — walkthrough available on request.
-
-### 🤖 AI Error Fixer
-A developer tool that uses AI to help explain and fix code errors.
-> Private repo — demo on request.
 
 ### 👗 JEE First Fashion
 A fashion e-commerce / brand website.
