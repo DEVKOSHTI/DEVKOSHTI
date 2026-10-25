@@ -37,7 +37,7 @@ A complete on-demand water delivery business system.
 | **Customer App** | Customers place and track water orders |
 | **Delivery App** | Delivery staff receive and complete orders |
 
-> Private client codebase — live demo / walkthrough available on request.
+> 🌐 **Live:** [water.devkoshti.com](https://water.devkoshti.com) · Private codebase — walkthrough available on request.
 
 ### 🔎 [LinkedIn Jobs Scraper (Apify Actor)](https://github.com/DEVKOSHTI/Apify-Linkedin-Jobs-Scraper)
 A cloud actor on the Apify platform that returns structured LinkedIn job listings
