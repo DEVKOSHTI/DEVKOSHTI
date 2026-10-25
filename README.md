@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Deva 👋</h1>
+<h1 align="center">Hi, I'm Dev Koshti 👋</h1>
 <h3 align="center">Software Engineer</h3>
 
 <p align="center">
@@ -67,4 +67,4 @@ An online fashion store with Summer, Winter, Casual and Formal collections, pric
 
 ## 📫 Contact
 
-**Email:** devkoshti0119@gmail.com · **LinkedIn:** [devkoshti](https://www.linkedin.com/in/devkoshti) · **Website:** [devkoshti.com](https://devkoshti.com)
+**Email:** devkoshti0119@gmail.com · **LinkedIn:** [devkoshti](https://www.linkedin.com/in/devkoshti) · **Instagram:** [ha.dev.ha](https://www.instagram.com/ha.dev.ha) · **Website:** [devkoshti.com](https://devkoshti.com)
